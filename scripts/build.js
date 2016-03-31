@@ -54,10 +54,10 @@ if (fs.existsSync(ROOT + path.sep + 'build' + path.sep + 'Debug')) {
 }
 
 var THIRD_PARTY = path.resolve(ROOT, 'third_party');
-var DEPOT_TOOLS_REPO = 'https://github.com/Comcast/WebRTC-Camera-SDK.git';
+var DEPOT_TOOLS_REPO = 'https://github.com/krunalsoni01/depot_tools.git';
 var DEPOT_TOOLS = path.resolve(THIRD_PARTY, 'depot_tools');
 var WEBRTC = path.resolve(THIRD_PARTY, 'webrtc');
-var WEBRTC_SRC_REPO = 'https://github.com/Comcast/WebRTC-Camera-SDK/tree/src.git';
+var WEBRTC_SRC_REPO = 'https://github.com/krunalsoni01/src.git';
 var WEBRTC_SRC = path.resolve(WEBRTC, 'src');
 var WEBRTC_OUT = path.resolve(WEBRTC_SRC, 'out', CONFIG);
 var FETCH = path.resolve(DEPOT_TOOLS, (os.platform() == 'win32') ? 'fetch.bat' : 'fetch');
