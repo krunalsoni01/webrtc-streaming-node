@@ -275,7 +275,7 @@ if (!fs.existsSync(THIRD_PARTY)) {
 process.env['PATH'] = process.env['PATH'] + path.delimiter + DEPOT_TOOLS;
 
 if (!fs.existsSync(DEPOT_TOOLS)) {
-  var res = spawn('git', ['clone', '-b', 'depot_tools', DEPOT_TOOLS_REPO], {
+  var res = spawn('git', ['clone', DEPOT_TOOLS_REPO], {
     cwd: THIRD_PARTY,
     env: process.env,
     stdio: 'inherit',
